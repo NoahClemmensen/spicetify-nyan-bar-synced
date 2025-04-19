@@ -1,0 +1,49 @@
+/* Rainbow Progress Bar */
+.x-progressBar-fillColor {
+    background: linear-gradient(to right, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%);
+    background-size: 200% 100%; /* Make the gradient twice as wide */
+    animation: scroll 2s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        background-position: 0 0; /* Start at the left */
+    }
+    to {
+        background-position: 200% 0; /* Move to the left by 100% of the element's width */
+    }
+}
+
+
+/* Nyan Bar Slider */
+.progress-bar__slider {
+    display: flex !important;
+    background: blue !important;
+    /*animation: frameAnimation 0.5s steps(6) infinite;*/
+}
+
+/*
+@keyframes frameAnimation {
+    0% {
+        background-image: url('/images/nyan_0.png');
+    }
+    16.67% {
+        background-image: url('/images/nyan_1.png');
+    }
+    33.33% {
+        background-image: url('/images/nyan_2.png');
+    }
+    50% {
+        background-image: url('/images/nyan_3.png');
+    }
+    66.67% {
+        background-image: url('/images/nyan_4.png');
+    }
+    83.33% {
+        background-image: url('/images/nyan_5.png');
+    }
+    100% {
+        background-image: url('/images/nyan_0.png');
+    }
+}
+*/

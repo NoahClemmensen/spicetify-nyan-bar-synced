@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Nyan-Bar Synced",
+    "description": "An extension that turns your progress bar into a nyan car, jamming in sync with the beat of your music.",
+    "preview": "marketplace/preview.gif",
+    "main": "dist/nyan-bar-synced.js",
+    "readme": "README.md"
+  }
+]
