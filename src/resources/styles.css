@@ -18,32 +18,34 @@
 /* Nyan Bar Slider */
 .progress-bar__slider {
     display: flex !important;
-    background: blue !important;
-    /*animation: frameAnimation 0.5s steps(6) infinite;*/
+    animation: frameAnimation 0.5s steps(6) infinite;
+    background-size: contain; /* Scale the image to fit within the slider */
+    background: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_0.png?raw=true') no-repeat;
+    width: 34px;
+    height: 12px;
+    border-radius: 0;
 }
 
-/*
 @keyframes frameAnimation {
     0% {
-        background-image: url('/images/nyan_0.png');
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_0.png?raw=true');
     }
     16.67% {
-        background-image: url('/images/nyan_1.png');
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_1.png?raw=true');
     }
     33.33% {
-        background-image: url('/images/nyan_2.png');
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_2.png?raw=true');
     }
     50% {
-        background-image: url('/images/nyan_3.png');
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_3.png?raw=true');
     }
     66.67% {
-        background-image: url('/images/nyan_4.png');
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_4.png?raw=true');
     }
     83.33% {
-        background-image: url('/images/nyan_5.png');
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_5.png?raw=true');
     }
     100% {
-        background-image: url('/images/nyan_0.png');
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_0.png?raw=true');
     }
 }
-*/
