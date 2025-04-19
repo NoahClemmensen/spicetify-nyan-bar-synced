@@ -18,34 +18,44 @@
 /* Nyan Bar Slider */
 .progress-bar__slider {
     display: flex !important;
-    animation: frameAnimation 0.5s steps(6) infinite;
-    background-size: contain; /* Scale the image to fit within the slider */
-    background: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_0.png?raw=true') no-repeat;
-    width: 34px;
-    height: 12px;
+    width: 24px;
+    height: 15px;
     border-radius: 0;
+
+    --anim-speed: 500ms;
+
+    background-size: contain; /* Scale the image to fit within the slider */
+    background: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_1.png?raw=true') no-repeat;
+    background-size: 100% 100%;
 }
 
-@keyframes frameAnimation {
+.progress-bar__slider.play-anim {
+    animation: nyanFrameAnim var(--anim-speed) steps(6) infinite;
+}
+
+@keyframes nyanFrameAnim {
     0% {
-        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_0.png?raw=true');
-    }
-    16.67% {
+        background-position-y: 0;
         background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_1.png?raw=true');
     }
-    33.33% {
+    16.67% {
         background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_2.png?raw=true');
     }
-    50% {
+    33.33% {
         background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_3.png?raw=true');
     }
-    66.67% {
+    50% {
+        background-position-y: 1px;
         background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_4.png?raw=true');
     }
-    83.33% {
+    66.67% {
         background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_5.png?raw=true');
     }
+    83.33% {
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_6.png?raw=true');
+    }
     100% {
-        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_0.png?raw=true');
+        background-position-y: 0;
+        background-image: url('https://github.com/NoahClemmensen/spicetify-nyan-bar-synced/blob/master/src/resources/images/nyan_1.png?raw=true');
     }
 }
