@@ -80,10 +80,10 @@ async function playPauseNyan() {
 }
 
 function createSettingsUI() {
-    settings.addButton("nyanbarsynced-reload", "Console logs test", "Test", async () => {
+    /*settings.addButton("nyanbarsynced-reload", "Console logs test", "Test", async () => {
         console.log("Test button clicked");
     });
-    settings.pushSettings();
+    settings.pushSettings();*/
 }
 
 async function main() {
